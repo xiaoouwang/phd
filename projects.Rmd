@@ -1,0 +1,61 @@
+---
+title: "Projects"
+Author: "Xiaoou WANG"
+output:
+    html_document:
+        toc: true
+        toc_float: true
+---
+
+Sometimes I like to do projects and then post them on the internet for the whole world to benefit
+
+here's some examples. 
+
+## Xingyu LIU 10/30/2019
+
+- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
+- Includes a github repo for access to all the code.
+- Look at how high quality my work is, hire and or collaborate with me. 
+- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
+- Includes a github repo for access to all the code.
+- Look at how high quality my work is, hire and or collaborate with me. 
+- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
+- Includes a github repo for access to all the code.
+- Look at how high quality my work is, hire and or collaborate with me. 
+- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
+- Includes a github repo for access to all the code.
+- Look at how high quality my work is, hire and or collaborate with me. 
+- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
+- Includes a github repo for access to all the code.
+- Look at how high quality my work is, hire and or collaborate with me. 
+<!---From http://stackoverflow.com/questions/31753897/2-column-section-in-r-markdown:
+Put in your css file or directly in rmarkdown--->
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+</style>
+ 
+<div class="col2">
+**hehe**
+
+- note `<div class="col2">` and `</div>`
+- what beautiful bullet points
+<br>
+<br>
+
+**Column 2**
+
+- I have 3 bullet points here
+- which means to align with the left column
+- I added a `<br>` there
+</div>
+
+<br>
+
+## Xiaoou WANG 10/28/2019
+
+- Interactive plots of things
+- I can code!

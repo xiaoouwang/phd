@@ -1,9 +1,24 @@
+# free bootstrap theme
+# theme specifies the Bootstrap theme to use for the page (themes are drawn from the Bootswatch theme library). Valid themes include default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti. Pass null for no theme (in this case you can use the css parameter to add your own styles).
+
 name: "xiaoouwang-website"
 output_dir: "."
 navbar:
   title: "XiaoouWANG Website"
   left:
     - text: "Home"
+      icon: fa-home  # handy way to use FontAwesome icons in nav!
       href: index.html
-    - text: "About Me"
+    - text: "Projects"     ##### the new
+      href: projects.html  ##### stuff
+    - text: "About Us"
+      icon: fa-newspaper-o
       href: about.html
+
+output:
+  html_document:
+    theme: cosmo
+    highlight: pygments
+    include:
+      after_body: footer.html
+    css: style.css
