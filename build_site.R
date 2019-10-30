@@ -1,0 +1,2 @@
+setwd("/Users/rosingle/Documents/phd")
+rmarkdown::render_site()
