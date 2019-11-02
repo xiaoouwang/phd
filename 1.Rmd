@@ -1,0 +1,18 @@
+## 25/09/19 - Préambule Unix I
+
+<center><font size="3" color="blue">Système de fichiers</font></center>
+<br>
+Sous windows, il y a plusieurs arborescences tandis que sous unix, on a qu’une arborescence.
+
+```{bash echo=TRUE}
+pwd # print repertoire actuel
+cd .. # remonte au repertoire parent
+cd / # aller a la racine
+echo "# exemple de l'arborescence de la racine sous Mac"
+ls # exemple de l'arborescence de la racine sous Mac
+cd ~ # aller a home
+echo "# sortie de la commande cat"
+cat test.txt # visualiser le contenu d'un fichier
+echo "# montrer les metadonnes du contenu"
+wc test.txt # la commande egale wc -mlw, m = caractere l = ligne, w = mots
+```

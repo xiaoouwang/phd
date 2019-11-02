@@ -1,0 +1,45 @@
+## 02/10/19 - Préambule Unix II 
+
+<center><font size="3" color="blue">1. Flux d'entrée & de sortie & d'erreur</font></center>
+
+```{bash echo=TRUE}
+# flux d’erreur standard ">>" (sortie normal) vs. 2> (canal d’erreur)
+cd ~
+lsd > sortie.txt 2> erreur.txt
+# exercice : transformer tous les n en N d'un fichier et l'enregistrer dans un autre fichier
+tr "n" "N" < test.txt > testN.txt
+cat testN.txt
+# Exercice : majusculiser les données
+tr "[[:lower:]]" "[[:upper:]]" < test.txt
+```
+
+<center><font size="3" color="blue">2. Redirection du flux d’information</font></center>
+<br>
+Récupérer l’output de la première commande et le réenvoyer à la deuxième commande - symbole clé : pipe |
+
+```{bash echo = TRUE}
+# transformer "é" en "E" puis majusculiser l'output de la première commande
+cd ~
+tr "é" "E" < test.txt | tr "[[:lower:]]" "[[:upper:]]"
+# trier par le premier champ - sort ; filtrage de doublons - uniq
+egrep -o "\w+" test.txt | sort | uniq -c
+```
+
+
+<center><font size="3" color="blue">3. Sectionner les données par champ (un champ est defini par un symbole qui delimite ce champ particulier)</font></center>
+
+```{bash echo = TRUE}
+# couper les données en 2 champs par le délimiteur "="
+cd ~
+echo "la somme de 2+2=4" > test2.txt
+cut -f2 -d"=" test2.txt
+# utiliser read pour capturer la saisie de l'utilisateur et la stocker dans une variable
+echo "nom ?" ; 
+# read nom;
+echo "bonjour $nom"
+```
+nom ?
+
+wang
+
+bonjour wang

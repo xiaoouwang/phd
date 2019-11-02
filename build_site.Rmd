@@ -1,3 +1,13 @@
-setwd("/Users/rosingle/Documents/phd")
-rmarkdown::render_site()
+# ```{r}
+# setwd("/Users/rosingle/Documents/phd")
+# rmarkdown::render_site()
+# ```
+
+```{bash}
+git add .
+git commit -m "hehe"
+git push origin master
+```
+
+
 

@@ -1,0 +1,58 @@
+## 09/10/19 - Préparation du projet
+
+<center><font size="3" color="blue"><center><font size="3" color="blue">Configuration du terrain
+</font></center></font></center>
+<br>
+
+* Nous avons créé l'arborescence de travail à l'aide du script bash suivant nommé 'prepare-environnement-projet.sh'
+```{bash eval=FALSE}
+#!/bin/bash
+mkdir PROJET_MOT_SUR_LE_WEB
+cd PROJET_MOT_SUR_LE_WEB
+# on peut desormais creer l'arborescence de travail
+mkdir ./CONTEXTES;
+mkdir ./DUMP_TEXT;
+mkdir ./IMAGES;
+mkdir ./PAGES_ASPIREES;
+mkdir ./PROGRAMMES;
+mkdir ./TABLEAUX;
+mkdir ./URLS;
+# les lignes precedentes peuvent tenir sur une seule ligne
+# a savoir mkdir ./CONTEXTES ./DUMP_TEXT etc....
+# le dossier URLS contiendra le fichier initial d'URLs
+````
+
+* Il suffit de nous positionner dans le même répertoire que ce script et l'exécuter avec bash
+
+```{bash eval=FALSE}
+bash prepare-environnement-projet.sh
+```
+
+<center><font size="3" color="blue"><center><font size="3" color="blue">Etape 1 : lire les fichiers URL et écrire leurs contenus ligne par ligne dans un nouveau fichier</font></center></font></center>
+<br>
+_J'ai une remarque sur la manière dont on utilise pour récupérer tous les fichiers dans un répertoire. J'ai utilisé /chemin/* au lieu de $(ls /chemin) car ce dernier m'apparaît un peu lourd mais je vois pas leur différence au niveau de sortie_
+
+```{bash eval=FALSE}
+# !/bin/bash
+# on commence par effacer l'éventuel contenu de ficher que l'on doit réécrire
+echo "" > "$2/tableau.html";
+# on récupère les 2 arguments que l'on a passé au programme
+# le premier : chemin vers le dossier contenant les fichiers d'URL
+# le second : chemin vers le dossier devant contenir le fichier HTML final
+echo "les urls sont dans : $1";
+echo "chemin de stockage : $2";
+# pour tous les fichiers dans le répertoire 1
+for fichier in $1/*
+# on exécute les commandes suivantes
+do
+# compteur destiné à compter les URLs pour chaque fichier d'URL
+compteur=1;
+echo "$fichier";
+  for ligne in $(cat "$fichier")
+  do 
+  echo "$compteur : $ligne" >> "$2/tableau.html";
+  # on incrémente le compteur des URLs
+  compteur=$((compteur+1))
+  done
+done
+```
