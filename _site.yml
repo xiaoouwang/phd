@@ -14,7 +14,7 @@ navbar:
       icon: fa-tasks
       href: projects.html  ##### stuff
     - text: "Journal"     ##### the
-      icon: fab fa-blogger
+      icon: fab fa-blog
       href: journal.html  ##### stuff
     - text: "About Us"
       icon: fa-newspaper-o

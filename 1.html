@@ -12,7 +12,7 @@
 
 
 
-<title>About Me</title>
+<title>1.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +25,97 @@
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -297,17 +388,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About Me</h1>
 
 </div>
 
 
-<p>Why I am awesome.</p>
-<ul>
-<li><strong>Name:</strong> Xiaoou WANG</li>
-<li><strong>Ocupation:</strong> “Student”</li>
-<li><strong>Hobbies:</strong> Learning software development instead of studying for exams.</li>
-</ul>
+<div id="préambule-unix-i" class="section level2">
+<h2>25/09/19 - Préambule Unix I</h2>
+<center>
+<font size="3" color="blue">Système de fichiers</font>
+</center>
+<p><br> Sous windows, il y a plusieurs arborescences tandis que sous unix, on a qu’une arborescence.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="bu">pwd</span> <span class="co"># print repertoire actuel</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="bu">cd</span> .. <span class="co"># remonte au repertoire parent</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="bu">cd</span> / <span class="co"># aller a la racine</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="bu">echo</span> <span class="st">&quot;# exemple de l&#39;arborescence de la racine sous Mac&quot;</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="fu">ls</span> <span class="co"># exemple de l&#39;arborescence de la racine sous Mac</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="bu">cd</span> ~ <span class="co"># aller a home</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="bu">echo</span> <span class="st">&quot;# sortie de la commande cat&quot;</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="fu">cat</span> test.txt <span class="co"># visualiser le contenu d&#39;un fichier</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="bu">echo</span> <span class="st">&quot;# montrer les metadonnes du contenu&quot;</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="fu">wc</span> test.txt <span class="co"># la commande egale wc -mlw, m = caractere l = ligne, w = mots</span></a></code></pre></div>
+<pre><code>## /Users/rosingle/Documents/phd
+## # exemple de l&#39;arborescence de la racine sous Mac
+## Applications
+## Library
+## System
+## Users
+## Volumes
+## bin
+## cores
+## dev
+## etc
+## home
+## opt
+## private
+## sbin
+## tmp
+## usr
+## var
+## # sortie de la commande cat
+## bonjour !
+## # montrer les metadonnes du contenu
+##        1       2      10 test.txt</code></pre>
+</div>
 
 <p>Copyright &copy; 2019 Xingyu LIU&Xiaoou WANG. All rights reserved.</p>
 

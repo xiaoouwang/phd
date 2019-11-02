@@ -1,7 +1,7 @@
-# ```{r}
-# setwd("/Users/rosingle/Documents/phd")
-# rmarkdown::render_site()
-# ```
+```{r}
+ setwd("/Users/rosingle/Documents/phd")
+ rmarkdown::render_site()
+```
 
 ```{bash}
 git add .
