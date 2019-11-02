@@ -1,6 +1,7 @@
 # free bootstrap theme
 # theme specifies the Bootstrap theme to use for the page (themes are drawn from the Bootswatch theme library). Valid themes include default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti. Pass null for no theme (in this case you can use the css parameter to add your own styles).
-
+# nice https://stackoverflow.com/questions/31753897/2-column-section-in-r-markdown
+# http://www.storybench.org/how-to-build-a-website-with-blogdown-in-r/
 name: "xiaoouwang-website"
 output_dir: "."
 navbar:
@@ -10,7 +11,11 @@ navbar:
       icon: fa-home  # handy way to use FontAwesome icons in nav!
       href: index.html
     - text: "Projects"     ##### the new
+      icon: fa-tasks
       href: projects.html  ##### stuff
+    - text: "Journal"     ##### the
+      icon: fab fa-blogger
+      href: journal.html  ##### stuff
     - text: "About Us"
       icon: fa-newspaper-o
       href: about.html
