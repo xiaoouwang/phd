@@ -378,7 +378,12 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://example.com">
+    <span class="fa fa-question fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -405,8 +410,8 @@ $(document).ready(function () {
 <a class="sourceLine" id="cb1-6" data-line-number="6"><span class="fu">cat</span> testN.txt</a>
 <a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co"># Exercice : majusculiser les données</span></a>
 <a class="sourceLine" id="cb1-8" data-line-number="8"><span class="fu">tr</span> <span class="st">&quot;[[:lower:]]&quot;</span> <span class="st">&quot;[[:upper:]]&quot;</span> <span class="op">&lt;</span> test.txt</a></code></pre></div>
-<pre><code>## boNjour !
-## BONJOUR !</code></pre>
+<pre><code>## /Users/rosiNgle/.pyeNv/biN:/usr/local/mysql/biN:/Users/rosiNgle/.pyeNv/biN:/Users/rosiNgle/.pyeNv/biN:/usr/local/mysql/biN:/Users/rosiNgle/.pyeNv/biN:/Users/rosiNgle/.pyeNv/versioNs/aNacoNda3-5.3.0/:/usr/local/biN:/usr/biN:/biN:/usr/sbiN:/sbiN:/opt/local/biN:/opt/local/sbiN:/ApplicatioNs/GPAC.app/CoNteNts/MacOS/:/Library/TeX/texbiN:/usr/local/share/dotNet:/opt/X11/biN:~/.dotNet/tools:/ApplicatioNs/Postgres.app/CoNteNts/VersioNs/latest/biN:/Users/rosiNgle/Library/ANdroid/sdk/emulator:/Users/rosiNgle/Library/ANdroid/sdk/tools:/Users/rosiNgle/Library/ANdroid/sdk/tools/biN:/Users/rosiNgle/Library/ANdroid/sdk/platform-tools:/biN/sh:/Users/rosiNgle/.pyeNv/versioNs/aNacoNda3-5.3.0/biN:/ApplicatioNs/Visual Studio Code.app/CoNteNts/Resources/app/biN:/Users/rosiNgle/flutter/biN:/Users/rosiNgle/Library/ANdroid/sdk/emulator:/Users/rosiNgle/Library/ANdroid/sdk/tools:/Users/rosiNgle/Library/ANdroid/sdk/tools/biN:/Users/rosiNgle/Library/ANdroid/sdk/platform-tools:/biN/sh:/Users/rosiNgle/.pyeNv/versioNs/aNacoNda3-5.3.0/biN:/ApplicatioNs/Visual Studio Code.app/CoNteNts/Resources/app/biN:/Users/rosiNgle/flutter/biN
+## /USERS/ROSINGLE/.PYENV/BIN:/USR/LOCAL/MYSQL/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USR/LOCAL/MYSQL/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/:/USR/LOCAL/BIN:/USR/BIN:/BIN:/USR/SBIN:/SBIN:/OPT/LOCAL/BIN:/OPT/LOCAL/SBIN:/APPLICATIONS/GPAC.APP/CONTENTS/MACOS/:/LIBRARY/TEX/TEXBIN:/USR/LOCAL/SHARE/DOTNET:/OPT/X11/BIN:~/.DOTNET/TOOLS:/APPLICATIONS/POSTGRES.APP/CONTENTS/VERSIONS/LATEST/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/EMULATOR:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/PLATFORM-TOOLS:/BIN/SH:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/BIN:/APPLICATIONS/VISUAL STUDIO CODE.APP/CONTENTS/RESOURCES/APP/BIN:/USERS/ROSINGLE/FLUTTER/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/EMULATOR:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/PLATFORM-TOOLS:/BIN/SH:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/BIN:/APPLICATIONS/VISUAL STUDIO CODE.APP/CONTENTS/RESOURCES/APP/BIN:/USERS/ROSINGLE/FLUTTER/BIN</code></pre>
 <center>
 <font size="3" color="blue">2. Redirection du flux d’information</font>
 </center>
@@ -416,8 +421,46 @@ $(document).ready(function () {
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="fu">tr</span> <span class="st">&quot;é&quot;</span> <span class="st">&quot;E&quot;</span> <span class="op">&lt;</span> test.txt <span class="kw">|</span> <span class="fu">tr</span> <span class="st">&quot;[[:lower:]]&quot;</span> <span class="st">&quot;[[:upper:]]&quot;</span></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"># trier par le premier champ - sort ; filtrage de doublons - uniq</span></a>
 <a class="sourceLine" id="cb3-5" data-line-number="5"><span class="fu">egrep</span> -o <span class="st">&quot;\w+&quot;</span> test.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> -c</a></code></pre></div>
-<pre><code>## BONJOUR !
-##    1 bonjour</code></pre>
+<pre><code>## /USERS/ROSINGLE/.PYENV/BIN:/USR/LOCAL/MYSQL/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USR/LOCAL/MYSQL/BIN:/USERS/ROSINGLE/.PYENV/BIN:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/:/USR/LOCAL/BIN:/USR/BIN:/BIN:/USR/SBIN:/SBIN:/OPT/LOCAL/BIN:/OPT/LOCAL/SBIN:/APPLICATIONS/GPAC.APP/CONTENTS/MACOS/:/LIBRARY/TEX/TEXBIN:/USR/LOCAL/SHARE/DOTNET:/OPT/X11/BIN:~/.DOTNET/TOOLS:/APPLICATIONS/POSTGRES.APP/CONTENTS/VERSIONS/LATEST/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/EMULATOR:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/PLATFORM-TOOLS:/BIN/SH:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/BIN:/APPLICATIONS/VISUAL STUDIO CODE.APP/CONTENTS/RESOURCES/APP/BIN:/USERS/ROSINGLE/FLUTTER/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/EMULATOR:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/TOOLS/BIN:/USERS/ROSINGLE/LIBRARY/ANDROID/SDK/PLATFORM-TOOLS:/BIN/SH:/USERS/ROSINGLE/.PYENV/VERSIONS/ANACONDA3-5.3.0/BIN:/APPLICATIONS/VISUAL STUDIO CODE.APP/CONTENTS/RESOURCES/APP/BIN:/USERS/ROSINGLE/FLUTTER/BIN
+##    3 0
+##    3 3
+##    3 5
+##    8 Android
+##    4 Applications
+##    2 Code
+##    4 Contents
+##    1 GPAC
+##    9 Library
+##    1 MacOS
+##    1 Postgres
+##    2 Resources
+##    2 Studio
+##    1 TeX
+##   17 Users
+##    1 Versions
+##    2 Visual
+##    1 X11
+##    3 anaconda3
+##    6 app
+##   22 bin
+##    2 dotnet
+##    2 emulator
+##    2 flutter
+##    1 latest
+##    6 local
+##    2 mysql
+##    3 opt
+##    2 platform
+##    7 pyenv
+##   17 rosingle
+##    3 sbin
+##    8 sdk
+##    2 sh
+##    1 share
+##    1 texbin
+##    7 tools
+##    6 usr
+##    3 versions</code></pre>
 <center>
 <font size="3" color="blue">3. Sectionner les données par champ (un champ est defini par un symbole qui delimite ce champ particulier)</font>
 </center>
@@ -437,7 +480,7 @@ $(document).ready(function () {
 <p>bonjour wang</p>
 </div>
 
-<p>Copyright &copy; 2019 Xingyu LIU&Xiaoou WANG. All rights reserved.</p>
+<p>Copyright &copy; 2019 Xiaoou WANG. All rights reserved.</p>
 
 
 

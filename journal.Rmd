@@ -11,8 +11,5 @@ output:
 ```{r child, child='1.Rmd'}
 ```
 
-```{r child, child='2.Rmd'}
-```
-
-```{r child, child='3.Rmd'}
+```{r child, child='4.Rmd'}
 ```

@@ -19,6 +19,9 @@ navbar:
     - text: "About Us"
       icon: fa-newspaper-o
       href: about.html
+  right:
+    - icon: fa-question fa-lg
+      href: https://example.com
 
 output:
   html_document:

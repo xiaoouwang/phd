@@ -1,0 +1,27 @@
+## data transformation
+
+数据一般都有几个固定的处理，今天先说筛选
+```{r}
+source("_site.R")
+```
+### 第一种筛选，只选某些列
+ss
+
+```{r}
+flights
+# library(dplyr)
+# ?filter
+filter(flights, month == 11)
+```
+# filter(mpg, cyl == 8)
+# filter(diamonds, carat > 3)
+
+library(nycflights13)
+
+
+
+* logical operator
+
+* assignment and display 
+(dec25 <- filter(flights, month == 12, day == 25))
+* 
